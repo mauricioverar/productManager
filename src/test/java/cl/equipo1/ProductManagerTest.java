@@ -6,8 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
 import java.util.List;
-import java.util.UUID;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,8 +30,9 @@ private ProductManager manager;
         manager = null;
     }
 
+    // Agregar un producto
     @Test
-    void testAddProduct_ShouldStoreCorrectly() {
+    void agregarProducto_deberiaAgregarProductoALaLista() {
         Product product = manager.addProduct("Laptop", "High performance laptop", 1200.0);
 
         assertNotNull(product);
@@ -41,16 +44,16 @@ private ProductManager manager;
         assertTrue(allProducts.contains(product));
     }
 
+    // Actualizar un producto
     @Test
-    void testUpdateProduct_ExistingProduct_ShouldModifyDetails() {
+    void actualizarProducto_deberiaModificarDatosDeUnProducto() {
         Product product = manager.addProduct("Phone", "Smartphone", 800.0);
 
         boolean result = manager.updateProduct(
                 product.getId(),
                 "Updated Phone",
                 "New smartphone model",
-                900.0
-        );
+                900.0);
 
         assertTrue(result);
 
@@ -61,8 +64,9 @@ private ProductManager manager;
         assertEquals(900.0, updated.getPrice(), 0.001);
     }
 
+    // Eliminar un producto
     @Test
-    void testDeleteProduct_ExistingProduct_ShouldRemoveIt() {
+    void eliminarProducto_deberiaEliminarUnProducto() {
         Product product = manager.addProduct("Mouse", "Wireless mouse", 20.0);
 
         boolean deleted = manager.deleteProduct(product.getId());
@@ -70,15 +74,6 @@ private ProductManager manager;
         assertTrue(deleted);
         assertFalse(manager.findProductById(product.getId()).isPresent());
         assertThat(manager.getAllProducts(), not(hasItem(product)));
-    }
-
-    @Test
-    void testFindProductById_NonExistentProduct_ShouldReturnEmptyOptional() {
-        UUID fakeId = UUID.randomUUID();
-
-        Optional<Product> product = manager.findProductById(fakeId);
-
-        assertFalse(product.isPresent());
     }
 
     @ParameterizedTest

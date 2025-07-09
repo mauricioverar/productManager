@@ -52,7 +52,7 @@ public class ProductManagerTest {
 
         assertTrue(result);
 
-        Product updated = manager.findProductById(product.getId()); // ya no es Optional
+        Product updated = manager.findProductById(product.getId());
         assertNotNull(updated);
         assertEquals("Updated Phone", updated.getName());
         assertEquals("New smartphone model", updated.getDescription());
@@ -69,7 +69,7 @@ public class ProductManagerTest {
         assertTrue(deleted);
 
         Product resultado = manager.findProductById(product.getId());
-        assertNull(resultado); // Ya no usamos isPresent()
+        assertNull(resultado);
 
         assertThat(manager.getAllProducts(), not(hasItem(product)));
     }

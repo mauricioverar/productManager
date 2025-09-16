@@ -1,8 +1,7 @@
 package cl.equipo1;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assumptions.assumeTrue;
-
+import static org.junit.jupiter.api.Assumptions.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -16,53 +15,51 @@ public class ProductManagerTest {
     private ProductManager manager;
 
     @BeforeEach
-    void setUp() {
+    void iniciarTest() {
         manager = new ProductManager();
     }
 
     @AfterEach
-    void tearDown() {
+    void finalizarTest() {
         manager = null;
     }
 
-    // Agregar un producto
     @Test
     void agregarProducto_deberiaAgregarProductoALaLista() {
-        Product product = manager.addProduct("Laptop", "High performance laptop", 1200.0);
+        Product product = manager.addProduct("Laptop", "Alto rendimiento", 1200.0);
 
         assertNotNull(product);
         assertEquals("Laptop", product.getName());
         assertEquals(1200.0, product.getPrice(), 0.001);
         assertNotNull(product.getId());
 
-        List<Product> allProducts = manager.getAllProducts();
+        // Verificamos que el producto se haya agregado
+        List<Product> allProducts = manager.getAllProducts(); 
         assertTrue(allProducts.contains(product));
     }
 
-    // Actualizar un producto
     @Test
     void actualizarProducto_deberiaModificarDatosDeUnProducto() {
-        Product product = manager.addProduct("Phone", "Smartphone", 800.0);
+        Product product = manager.addProduct("Celular", "Smartphone", 800.0);
 
         boolean result = manager.updateProduct(
                 product.getId(),
-                "Updated Phone",
-                "New smartphone model",
+                "Actualizar celular",
+                "Nuevo modelo smartphone",
                 900.0);
 
         assertTrue(result);
 
         Product updated = manager.findProductById(product.getId());
         assertNotNull(updated);
-        assertEquals("Updated Phone", updated.getName());
-        assertEquals("New smartphone model", updated.getDescription());
+        assertEquals("Actualizar celular", updated.getName());
+        assertEquals("Nuevo modelo smartphone", updated.getDescription());
         assertEquals(900.0, updated.getPrice(), 0.001);
     }
 
-    // Eliminar un producto
     @Test
     void eliminarProducto_deberiaEliminarUnProducto() {
-        Product product = manager.addProduct("Mouse", "Wireless mouse", 20.0);
+        Product product = manager.addProduct("Mouse", "Mouse inalambrico", 20.0);
 
         boolean deleted = manager.deleteProduct(product.getId());
 
@@ -78,17 +75,26 @@ public class ProductManagerTest {
     @ValueSource(doubles = { 0.0, -10.0, 1000000.0 })
     void agregarProducto_deberiaAgregarVariacionesDePrecios(double price) {
 
-        System.out.println("Probando con precio: " + price);
         // Asumimos que solo se consideran precios positivos, osea 0.0 y 1000000.0
-        // pero lo probamos para ver cómo se comporta el código.
+
+        // Si no se cumple la condición, no vale la pena ejecutar nada del test ***********************************
+        /* 
         assumeTrue(price >= 0, "Solo se consideran precios positivos"); // -10.0 no debería ser válido
-
         Product product = manager.addProduct("Teclado", "Mecánico", price);
-
+        //System.out.println("Asumiendo que el precio es positivo: " + price);
         assertEquals(price, product.getPrice(), 0.001);
-        System.out.println("Producto agregado: " + product.getName() + " con precio: " + product.getPrice());
-        // Producto agregado: Teclado con precio: 0.0
-        // Producto agregado: Teclado con precio: 1000000.0
+        */
+
+        // La condición no invalida el test completo, solo una sección opcional ***********************************
+        assumingThat(price >= 0, () -> {
+            System.out.println("Asumiendo que el precio es positivo: " + price);
+            Product product = manager.addProduct("Teclado", "Mecánico", price);
+
+            assertEquals(price, product.getPrice(), 0.001);
+
+        }); // -10.0 no debería ser válido
+
+        
     }
 
     @Test

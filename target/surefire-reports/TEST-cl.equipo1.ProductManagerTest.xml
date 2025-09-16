@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.equipo1.ProductManagerTest" time="0.148" tests="7" errors="0" skipped="1" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.equipo1.ProductManagerTest" time="0.137" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin"/>
-    <property name="sun.java.command" value="C:\Users\mvera\AppData\Local\Temp\surefire13347711584111850180\surefirebooter-20250708222247332_3.jar C:\Users\mvera\AppData\Local\Temp\surefire13347711584111850180 2025-07-08T22-22-47_221-jvmRun1 surefire-20250708222247332_1tmp surefire_0-20250708222247332_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mvera\AppData\Local\Temp\surefire16600599586401721933\surefirebooter-20250709191850033_3.jar C:\Users\mvera\AppData\Local\Temp\surefire16600599586401721933 2025-07-09T19-18-49_916-jvmRun1 surefire-20250709191850033_1tmp surefire_0-20250709191850033_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mvera\OneDrive\Escritorio\tdd-junit\productmanager\target\test-classes;C:\Users\mvera\OneDrive\Escritorio\tdd-junit\productmanager\target\classes;C:\Users\mvera\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\mvera\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mvera\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mvera\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mvera\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\mvera\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mvera\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\mvera\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\mvera\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\mvera\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\mvera\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\mvera\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mvera\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.14.0\cucumber-junit-platform-engine-7.14.0.jar;C:\Users\mvera\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mvera\AppData\Local\Temp\surefire13347711584111850180\surefirebooter-20250708222247332_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mvera\AppData\Local\Temp\surefire16600599586401721933\surefirebooter-20250709191850033_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.14+7-LTS"/>
@@ -50,7 +50,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\mvera\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mvera\bin;C:\Python313\Scripts;C:\Python313;C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Gradle\gradle-8.12-all\gradle-8.12\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\mvera\AppData\Local\Android\Sdk\cmake\3.22.1\bin;C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\Users\mvera\AppData\Roaming\npm;C:\Users\mvera\.dotnet\tools;C:\Users\mvera\AppData\Local\Android\Sdk\platform-tools;C:\Users\mvera\AppData\Local\Android\Sdk\tools;C:\Users\mvera\AppData\Local\Android\Sdk\platform-tools;C:\Users\mvera\AppData\Local\Android\Sdk\tools;C:\Users\mvera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin;C:\Program Files\JetBrains\PyCharm 2025.1\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2025.1\bin;C:\Users\mvera\AppData\Local\Programs\Ollama;C:\Users\mvera\AppData\Roaming\Python\Python313\Scripts;C:\maven\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\mvera\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mvera\bin;C:\Python313\Scripts;C:\Python313;C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Gradle\gradle-8.12-all\gradle-8.12\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\mvera\AppData\Local\Android\Sdk\cmake\3.22.1\bin;C:\Program Files\Amazon Corretto\jdk17.0.14_7\bin;C:\Users\mvera\AppData\Roaming\npm;C:\Users\mvera\.dotnet\tools;C:\Users\mvera\AppData\Local\Android\Sdk\platform-tools;C:\Users\mvera\AppData\Local\Android\Sdk\tools;C:\Users\mvera\AppData\Local\Android\Sdk\platform-tools;C:\Users\mvera\AppData\Local\Android\Sdk\tools;C:\Users\mvera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin;C:\Program Files\JetBrains\PyCharm 2025.1\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2025.1\bin;C:\Users\mvera\AppData\Local\Programs\Ollama;C:\Users\mvera\AppData\Roaming\Python\Python313\Scripts;C:\maven\bin;C:\Users\mvera\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Amazon.com Inc."/>
     <property name="java.vm.version" value="17.0.14+7-LTS"/>
@@ -58,62 +58,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="agregarProducto_deberiaAgregarProductoALaLista" classname="cl.equipo1.ProductManagerTest" time="0.07"/>
-  <testcase name="actualizarProducto_deberiaModificarDatosDeUnProducto" classname="cl.equipo1.ProductManagerTest" time="0.0"/>
-  <testcase name="eliminarProducto_deberiaEliminarUnProducto" classname="cl.equipo1.ProductManagerTest" time="0.01"/>
-  <testcase name="agregarProducto_deberiaAgregarVariacionesDePrecios(double)[1]" classname="cl.equipo1.ProductManagerTest" time="0.018">
-    <system-out><![CDATA[Producto agregado: Teclado con precio: 0.0
+  <testcase name="agregarProducto_deberiaAgregarProductoALaLista" classname="cl.equipo1.ProductManagerTest" time="0.073"/>
+  <testcase name="actualizarProducto_deberiaModificarDatosDeUnProducto" classname="cl.equipo1.ProductManagerTest" time="0.001"/>
+  <testcase name="eliminarProducto_deberiaEliminarUnProducto" classname="cl.equipo1.ProductManagerTest" time="0.004"/>
+  <testcase name="agregarProducto_deberiaAgregarVariacionesDePrecios(double)[1]" classname="cl.equipo1.ProductManagerTest" time="0.023">
+    <system-out><![CDATA[Asumiendo que el precio es positivo: 0.0
+Producto agregado: Teclado con precio: 0.0
 ]]></system-out>
   </testcase>
-  <testcase name="agregarProducto_deberiaAgregarVariacionesDePrecios(double)[2]" classname="cl.equipo1.ProductManagerTest" time="0.0">
-    <skipped type="org.opentest4j.TestAbortedException"><![CDATA[org.opentest4j.TestAbortedException: Assumption failed: Solo se consideran precios positivos
-	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
-	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
-	at cl.equipo1.ProductManagerTest.agregarProducto_deberiaAgregarVariacionesDePrecios(ProductManagerTest.java:82)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></skipped>
-  </testcase>
-  <testcase name="agregarProducto_deberiaAgregarVariacionesDePrecios(double)[3]" classname="cl.equipo1.ProductManagerTest" time="0.0">
-    <system-out><![CDATA[Producto agregado: Teclado con precio: 1000000.0
+  <testcase name="agregarProducto_deberiaAgregarVariacionesDePrecios(double)[2]" classname="cl.equipo1.ProductManagerTest" time="0.001"/>
+  <testcase name="agregarProducto_deberiaAgregarVariacionesDePrecios(double)[3]" classname="cl.equipo1.ProductManagerTest" time="0.001">
+    <system-out><![CDATA[Asumiendo que el precio es positivo: 1000000.0
+Producto agregado: Teclado con precio: 1000000.0
 ]]></system-out>
   </testcase>
-  <testcase name="afirmacionesConHamcrest" classname="cl.equipo1.ProductManagerTest" time="0.01"/>
+  <testcase name="afirmacionesConHamcrest" classname="cl.equipo1.ProductManagerTest" time="0.003"/>
 </testsuite>
